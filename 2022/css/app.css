@@ -3,8 +3,8 @@
 
 
 body {
-	background: #eee;
-	color: #464646;
+	background: #fff;
+	color: #111;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-moz-osx-font-smoothing: grayscale;
@@ -17,7 +17,7 @@ font-family:  'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 	display: inline;
 }
 
-strong {
+strong, h1 {
 	font-weight: 900;
 }
 	em {
@@ -46,7 +46,7 @@ p {
 .intro h1, .intro p {
 	font-size: 20px;
 	line-height: 26px;
-	font-weight: 300;
+	font-weight: 400;
 	width: 90%
 }
 
@@ -90,6 +90,13 @@ span.wave:hover, span.wave:active  {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+
+.inline-slash li {
+	display: inline;
+}
+.inline-slash li::after {
+   content: ' / ';
+}
 
 @media (max-width: 567px) {
 .intro h1, .intro p {
