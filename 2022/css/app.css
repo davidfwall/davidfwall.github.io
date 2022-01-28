@@ -10,15 +10,15 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-font-family:  'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 12px;
+font-family:  -apple-system, BlinkMacSystemFont, 'Univers', "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 11.5px;
 	line-height: 20px;
-	font-weight: 400;
+	font-weight: 500;
 	display: inline;
 }
 
 strong, h1 {
-	font-weight: 900;
+	font-weight: 700;
 }
 	em {
 	font-style: italic;
@@ -43,12 +43,6 @@ p {
 }
 
 
-.intro h1, .intro p {
-	font-size: 20px;
-	line-height: 26px;
-	font-weight: 400;
-	width: 90%
-}
 
 p.hi {
 	font-size: 42px;
