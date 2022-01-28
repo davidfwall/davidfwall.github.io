@@ -44,32 +44,6 @@ p {
 
 
 
-p.hi {
-	font-size: 42px;
-}
-span.wave {
-	cursor: default;
-	
-}
-.hi:hover span.wave, .hi:active span.wave,
-span.wave:hover, span.wave:active  {
-  animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
-  animation-duration: 1s;          /* Change to speed up or slow down */
-  animation-iteration-count: infinite;    /* Never stop waving :) */
-  transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-    0% { transform: rotate(  0.0deg) }
-   10% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
-   20% { transform: rotate( 12.0deg) }
-   30% { transform: rotate(-10.0deg) }
-   40% { transform: rotate(  9.0deg) }
-   50% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
-  100% { transform: rotate(  0.0deg) }
-}
-
 
 
 .clearfix:before,
@@ -91,70 +65,20 @@ span.wave:hover, span.wave:active  {
 .inline-slash li::after {
    content: ' / ';
 }
-
-@media (max-width: 567px) {
-.intro h1, .intro p {
-	font-size: 17px;
-	line-height: 24px;
-	font-weight: 300;
-	width: 99%
+.inline-slash li:last-child::after {
+   content: '';
 }
-p.hi {
-	font-size: 56px;
-	margin-left: -5px;
-	
+@media (max-width: 567px) {
+body {
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 400;
+	display: inline;
+}
 }
 li {
 	width: 95%;
 
-
-}
-
-.hi span.wave, .hi span.wave {
-  animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
-  animation-duration: 10s;          /* Change to speed up or slow down */
-  animation-iteration-count: infinite;    /* Never stop waving :) */
-  transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-    0% { transform: rotate(  0.0deg) }
-   1% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
-   2% { transform: rotate( 12.0deg) }
-   3% { transform: rotate(-10.0deg) }
-   4% { transform: rotate(  9.0deg) }
-   5% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
-  100% { transform: rotate(  0.0deg) }
-}
-
-}
-
-
-@font-face {
-    font-family: 'Moderat-Web';
-    src: url('../font/moderat-regular-webfont.eot');
-    src: url('../font/moderat-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/moderat-regular-webfont.woff2') format('woff2'),
-         url('../font/moderat-regular-webfont.woff') format('woff'),
-         url('../font/moderat-regular-webfont.ttf') format('truetype'),
-         url('../font/moderat-regular-webfont.svg#moderatregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'Moderat-Web';
-    src: url('../font/moderat-bold-webfont.eot');
-    src: url('../font/moderat-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/moderat-bold-webfont.woff2') format('woff2'),
-         url('../font/moderat-bold-webfont.woff') format('woff'),
-         url('../font/moderat-bold-webfont.ttf') format('truetype'),
-         url('../font/moderat-bold-webfont.svg#moderatbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
 
 }
 
