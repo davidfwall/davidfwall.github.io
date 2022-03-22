@@ -43,25 +43,57 @@
 
 </head>
 
-    <body>		    
-	<div class="container intro pad-top-5 m-pad-top-7">
-		<!--<div class="row">
-						<div class="eleven columns end">
-						<p class="hi"><span class="wave">ðŸ‘‹</span></p>
-						</div>-->
+    <body>
+	<div class="nav">
+		<div class="container intro pad-top-1 m-pad-top-2">
 		</div>
 		<div class="row">
 			<div class="three columns">
-				<h1>Hi, I&rsquo;m David Wall.</h1>
+				<p><strong><em>David Wall</em></strong></p>
+			</div>
+			<div class="three columns">
+			</div>
+			<div class="three columns navlink">
+			<a href="#selected"><span class="hanging">▶ </span><strong><em>Selected Work</em></strong></a>
+
+			</div>
+			<div class="three columns navlink">
+			<a href="#information"><span class="hanging">○ </span><strong><em>Information</em></strong></a>
+			</div>
+		</div>
+	</div>	
+		
+		
+		
+		
+	<div class="selected" id="selected">
+					<video src="img/202203.mp4" autoplay loop muted alt="" />
+					
+	<video width="100%" height="100%" poster="img/poster.jpg" autoplay loop muted title="David Wall Selected Work Reel">
+    <source src="img/202203.mp4" type="video/mp4" /></source>
+    <source src="img/202203.ogv" type="video/ogg" /></source>
+	</video>
+		
+	</div>
+
+
+
+
+	<div class="container intro pad-top-25 m-pad-top-7" id="information">
+	
+		</div>
+		<div class="row vh-90">
+			<div class="three columns tablet-two">
+				<h1><strong><em>Hi, I&rsquo;m David Wall.</em></strong></h1><br />
 				<p>I&rsquo;m an Irish graphic designer, strategist and design director. Currently, I&rsquo;m Head of Design at <a href="https://mccanndublin.com/" target="_blank" class="no_ul">McCann Dublin</a>. Previously, I was co-founder/director of WorkGroup; an independent design studio. I sit on the board of the <a href="http://www.idi-design.ie/" target="_blank" class="no_ul">IDI</a>, I co-founded the <a href="http://www.100archive.com/" target="_blank" class="no_ul">100 Archive</a> and I&rsquo;m an <a href="https://icad.ie/" target="_blank" class="no_ul">ICAD</a> member.  
 				</p>
 				<p>Say hello on <a href="https://twitter.com/davidfwall/" target="_blank">Twitter</a>, <a href="https://medium.com/davidfwall/" target="_blank">Medium</a>, <a href="https://www.linkedin.com/in/davidfwall/" target="_blank">LinkedIn</a>, or <a href="mailto:hello@davidfwall.com">via&nbsp;email</a>.</p>
+				<a class="reelcreds">Selected Work Credits</a>
+				<p class="creds">I'm grateful to colleagues, collaborators and clients who have made this work possible: Atlantic TU created with design and strategy colleagues at McCann Dublin: Mariana Nevado; David Hussey; Cian Pawle-Bates; Lisa Haran; Ellie Lyness and Kimberly Goes. Cardano created with design and strategy colleagues at McCann Dublin: Bren Byrne; Felipe Ferreira; Leigh Morrow; Eamonn Rohan and David Nurse. Demonware created with Conor Nolan, along with Ruby Henderson and Jake Heavey at WorkGroup. Animation by Chris Lloyd. Glass Bottle designed with creative and strategy colleagues at McCann Dublin: Bren Byrne; Mariana Nevado; David Hussey; Cian Pawle-Bates; and with Max Phillips (lettering refinement). Kinzen created with Conor Nolan, along with Keelin Coyle at WorkGroup. RTB created with design and strategy colleagues at McCann Dublin: Emily Turner and Sinead Cowen. 3fe designed with Conor Nolan and the team at WorkGroup. 				</p>
 			</div>
-			<div class="six columns offset-by-three">
-					<div class="row m-pad-top-7">
-						<div class="eleven columns">
-							<strong>Selected Clients</strong><br />
-							<ul class="red inline-slash">
+			<div class="three columns tablet-two m-pad-top-7">
+					<strong><em>Selected Clients</em></strong><br /><br />
+						<ul class="red inline-slash">
 							<li>3fe</li>
 							<li>Alice Maher</li>
 							<li>Atlantic Technological University</li>
@@ -89,12 +121,12 @@
 							<li>Royal Dublin Society (RDS)</li>
 							<li>RIAI</li>	
 						</ul>
-						</div>
-				</div>
-				<div class="row pad-top-5">
-						<div class="four columns tablet-two">
-						<ul class="orange m-pad-top-7">
-						<strong>Awards Etc</strong><br />
+
+			</div>
+
+					<div class="two columns tablet-two m-pad-top-7">
+						<ul class="">
+						<strong><em>Awards Etc</em></strong><br /><br />
 							<li><em>ICAD Awards</em> &mdash; 4&times; Silver Bells, 8&times;&nbsp;Bronze Bells 2016&ndash;2019 for: Identity Design; Poster Design; Use of Illustration; Website Design.
 							</li>
 							<br />
@@ -114,9 +146,9 @@
 						</ul>
 					</div>
 
-					<div class="four columns tablet-two">
+					<div class="two columns tablet-two">
 						<ul class="purple m-pad-top-7">
-							<strong>Speaking Engagements</strong><br />
+							<strong><em>Speaking Engagements</em></strong><br /><br />
 							<li>WhyDesign (Dublin) 2021</li>
 							<li>Birmingham Design Festival 2019</li>
 							<li>Offset 2019 (Dublin)</li>
@@ -130,9 +162,9 @@
 							<li>&#8230;</li>
 						</ul>
 					</div>
-					<div class="four columns tablet-two end">
+					<div class="two columns tablet-two">
 						<ul class="green m-pad-top-7">
-								<strong>Publications</strong><br />
+								<strong><em>Publications</em></strong><br /><br />
 								<li>Creative Review</li>
 								<li>Irish Times</li>
 								<li>It’s Nice That</li>
@@ -150,9 +182,29 @@
 								<li><br /></li>
 							</ul>
 					</div>
-				</div>
 				
 				</div>
 			</div>
+			<script src="js/jquery.min.js"></script>
+
+			<script>
+				$(document).ready(function () {
+				$(document).on('click','.reelcreds',function () {
+				$("body").toggleClass("showcreds");
+				});
+				});
+				
+				$(window).scroll(function() {
+				if($(window).scrollTop() < 400) {
+				$('body').removeClass( "info" );
+				$('body').addClass( "select" );
+				} else {
+				$('body').addClass( "info" );
+				$('body').removeClass( "select" );
+				}
+				});
+
+				
+			</script>
 	</body>
 </html>

@@ -10,9 +10,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-font-family:  -apple-system, BlinkMacSystemFont, 'Univers', "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 11.5px;
-	line-height: 20px;
+font-family: "Standard",-apple-system, BlinkMacSystemFont, 'Univers', "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 12px;
+	line-height: 21px;
 	font-weight: 500;
 	display: inline;
 }
@@ -23,8 +23,14 @@ strong, h1 {
 	em {
 	font-style: italic;
 }
+
+strong, em {
+		font-size: 11px;
+
+}
 ul {
 	padding-bottom: 2em;
+	width: 95%;
 }
 	a, a:hover, a:focus {
 			color: #464646;
@@ -42,7 +48,11 @@ p {
 	width: 95%;
 }
 
-
+.hanging {
+	position: absolute;
+	margin-left: -12px;
+	width: 12px;
+}
 
 
 
@@ -68,6 +78,80 @@ p {
 .inline-slash li:last-child::after {
    content: '';
 }
+
+
+/* Selected Work */
+.selected {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	background: black;
+}
+
+
+.selected video {
+							width:100%;  height:100%;  display:block;  position:absolute; object-fit: cover;z-index: 0
+}
+
+
+/* NAV */
+
+.nav
+{
+width: 100vw;
+position: fixed;
+top: 0;
+z-index: 1;
+
+}
+
+.nav,
+.nav a {
+	color: white;
+	mix-blend-mode: screen;
+
+}
+.info .nav,
+.info .nav a {
+	color: black;
+	mix-blend-mode: multiply;
+
+}
+.reelcreds {
+	opacity: .45;
+	cursor: pointer;
+}
+
+.creds {
+	display: none;
+}
+
+.showcreds .creds {
+	display: inline;
+}
+
+
+
+@media (max-width: 1025px) {
+.selected {
+	height: 100vw;
+	width: 100vw;
+	position: relative;
+	background: black;
+}
+.nav {
+	position: absolute;
+}
+.navlink {
+	display: none;
+}
+}
+
+
+
+
+
+
 @media (max-width: 567px) {
 body {
 	font-size: 13px;
@@ -83,20 +167,38 @@ li {
 }
 
 @font-face{
-    font-family:"Univers";
+    font-family:"Standard";
     src:
-         url('../font/Univers55.woff2') format('woff2'),
-         url('../font/Univers55.woff') format('woff');
+         url('../font/Standard-Regular.woff2') format('woff2'),
+         url('../font/Standard-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+@font-face{
+    font-family:"Standard";
+    src:
+         url('../font/Mono-Regular.woff2') format('woff2'),
+         url('../font/Mono-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+@font-face{
+    font-family:"Standard";
+    src:
+         url('../font/Standard-Regular-Italic.woff2') format('woff2'),
+         url('../font/Standard-Regular-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
 
 @font-face{
-    font-family:"Univers";
+    font-family:"Standard";
     src:
-         url('../font/Univers65.woff2') format('woff2'),
-         url('../font/Univers65.woff') format('woff');
+         url('../font/Standard-Black.woff2') format('woff2'),
+         url('../font/Standard-Black.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
