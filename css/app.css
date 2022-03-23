@@ -146,7 +146,7 @@ z-index: 1;
 }
 }
 @media (min-width: 1500px) {
-p {
+p, ul {
 		width: 85%;
 }
 }
