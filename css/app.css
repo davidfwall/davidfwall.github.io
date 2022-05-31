@@ -107,7 +107,7 @@ z-index: 1;
 .nav,
 .nav a {
 	color: white;
-	mix-blend-mode: screen;
+	mix-blend-mode: exclusion;
 
 }
 .info .nav,
